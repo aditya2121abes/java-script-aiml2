@@ -1,0 +1,14 @@
+<input type="number" id="present" placeholder="Present Days">
+<input type="number" id="total" placeholder="Total Days">
+<button onclick="calc()">Check</button>
+<p id="result"></p>
+
+<script>
+function calc(){
+let p=document.getElementById("present").value;
+let t=document.getElementById("total").value;
+let per=(p/t)*100;
+document.getElementById("result").innerHTML=
+"Attendance: "+per.toFixed(2)+"%";
+}
+</script>

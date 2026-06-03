@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Age Calculator</title>
+</head>
+<body>
+
+<h2>Age Calculator</h2>
+<input type="number" id="year" placeholder="Birth Year">
+<button onclick="age()">Calculate</button>
+
+<p id="result"></p>
+
+<script>
+function age(){
+let y=document.getElementById("year").value;
+let a=new Date().getFullYear()-y;
+document.getElementById("result").innerHTML="Age: "+a;
+}
+</script>
+
+</body>
+</html>

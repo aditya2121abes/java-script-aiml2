@@ -1,0 +1,13 @@
+<input id="p" placeholder="Principal">
+<input id="r" placeholder="Rate">
+<input id="t" placeholder="Time">
+<button onclick="si()">Calculate</button>
+
+<script>
+function si(){
+let p=+document.getElementById("p").value;
+let r=+document.getElementById("r").value;
+let t=+document.getElementById("t").value;
+alert("SI = "+(p*r*t)/100);
+}
+</script>

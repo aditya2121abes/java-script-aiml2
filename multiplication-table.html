@@ -1,0 +1,13 @@
+<input id="num">
+<button onclick="table()">Show</button>
+<p id="out"></p>
+
+<script>
+function table(){
+let n=document.getElementById("num").value;
+let s="";
+for(let i=1;i<=10;i++)
+s+=n+" x "+i+" = "+(n*i)+"<br>";
+out.innerHTML=s;
+}
+</script>
